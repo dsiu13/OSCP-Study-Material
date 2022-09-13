@@ -1,7 +1,5 @@
 # Kali Basics
 
-## Common Commands
-
 ### ls: Lists all files or directories
   | Command | Function |
   |---------|----------|
@@ -17,10 +15,20 @@
 
 
 ### pwd
+  - Shows standard output of the full path name of current directory
 
+### grep
+| Command | Function |
+|---------|----------|
+| grep "text" file.txt | Search for the text within the text file. Will count partials |
+| grep -i "text" file.txt |   Removes case sensitive   |
+| grep -w "text" file.txt |   Strict match the string  |
+| grep -n "text" file.txt |   Will show line match was found on  |
+| grep -A {#} "text" file.txt |   Shows given number of lines before match   |
+| grep -B {#} "text" file.txt |   Shows given number of lines after match  |
+| grep -C {#} "text" file.txt |   Shows given number of lines before and after match   |
+| grep -win ./* | will search entire directory   |
 
-
-  e.g **ls ./path** or **ls ..**, **ls ~** will list out the home directory.
 
 | Command | Function | Flags |  Example |   |
 |---------|----------|-------|---|---|
